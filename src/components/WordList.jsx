@@ -4,7 +4,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 const WordList = ({ words, removeWord }) => {
     if (words.length === 0) {
         return (
-            <Typography variant="h6" color="textSecondary">
+            <Typography color="textTertiary">
                 No words added yet. Start adding some!
             </Typography>
         );
