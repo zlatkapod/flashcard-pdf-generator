@@ -1,6 +1,5 @@
-// src/components/ProfileMenu.jsx
 import React from 'react';
-import { IconButton, Menu, MenuItem, Avatar } from '@mui/material';
+import {IconButton, Menu, MenuItem} from '@mui/material';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 
 const ProfileMenu = () => {

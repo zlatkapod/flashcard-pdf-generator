@@ -1,7 +1,5 @@
 # Flashcard PDF Generator
 
-![Project Logo](path-to-your-logo.png) <!-- Replace with your project's logo if available -->
-
 ## Table of Contents
 
 - [Overview](#overview)

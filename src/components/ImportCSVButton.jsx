@@ -1,9 +1,7 @@
-// src/components/ImportCSVButton.jsx
-import React from 'react';
 import Button from '@mui/material/Button';
-import { Box } from '@mui/material';
+import {Box} from '@mui/material';
 
-const ImportCSVButton = ({ setWords }) => {
+const ImportCSVButton = ({setWords}) => {
     const handleFileUpload = (event) => {
         const file = event.target.files[0];
         if (!file) return;
@@ -23,7 +21,7 @@ const ImportCSVButton = ({ setWords }) => {
                 const [word, translation] = line.split(',').map((item) => item.trim());
                 // Ensure both word and translation exist
                 if (word && translation) {
-                    return { word, translation };
+                    return {word, translation};
                 }
                 return null;
             })
@@ -33,9 +31,16 @@ const ImportCSVButton = ({ setWords }) => {
 
     return (
         <Box>
-            <Button variant="outlined" component="label" fullWidth>
+            <Button variant="outlined" component="label" fullWidth sx={{
+                mt: 4, borderColor: 'darkorange',
+                color: 'darkorange',
+                '&:hover': {
+                    borderColor: 'darkorange',
+                    backgroundColor: 'rgba(255, 140, 0, 0.1)',
+                }
+            }}>
                 Import CSV
-                <input type="file" accept=".csv" hidden onChange={handleFileUpload} />
+                <input type="file" accept=".csv" hidden onChange={handleFileUpload}/>
             </Button>
         </Box>
     );

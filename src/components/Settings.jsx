@@ -1,6 +1,4 @@
-// src/components/Settings.jsx
-import React from 'react';
-import { FormControl, InputLabel, Select, MenuItem, Box } from '@mui/material';
+import {Box, FormControl, InputLabel, MenuItem, Select} from '@mui/material';
 
 const Settings = ({ settings, setSettings }) => {
     const handleChange = (event) => {

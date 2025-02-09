@@ -1,5 +1,4 @@
-// src/components/WordList.jsx
-import { List, ListItem, ListItemText, IconButton, Typography, Box } from '@mui/material';
+import {Box, IconButton, List, ListItem, ListItemText, Typography} from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 
 const WordList = ({ words, removeWord }) => {
