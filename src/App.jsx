@@ -6,6 +6,7 @@ import Settings from './components/Settings';
 import GeneratePDFButton from './components/GeneratePDFButton';
 import ImportCSVButton from './components/ImportCSVButton';
 import {Box, Button, Container, Grid} from '@mui/material';
+import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
     const [words, setWords] = useState([]);
@@ -58,6 +59,7 @@ const App = () => {
                     </Grid>
                 </Grid>
             </Container>
+            <Analytics />
         </>
     );
 };
